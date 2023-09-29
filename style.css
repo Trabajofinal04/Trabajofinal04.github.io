@@ -181,6 +181,7 @@ h3 {
     font-size: 35px;
     color: white;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .ofert-content {
@@ -308,6 +309,7 @@ h3 {
     font-size: 18px;
     text-transform: uppercase;
     color: white;
+    padding: 15px;
 }
 
 .link a:hover {
