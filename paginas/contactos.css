@@ -5,53 +5,41 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Satisfy', cursive;
 */
 
-*{
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: 'Poppins', sans-serif;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-
-
-h1{ font-size: 3.5em;}
-h2{ font-size: 2.7em;}
-h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
-ul{ list-style: none;}
-li{ font-size: 1.25em;}
-
-button{
-    font-size: 1.25em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: #c9a538;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F4F0;
 }
 
-button:hover{
-    background-color: rgb(101, 33, 165);
+img {
+    max-width: 100%;
 }
 
-.container{
-    max-width: 1400px;
-    margin: auto;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.color-acento{ color:blueviolet; }
-
-header{
-    background-color: rgb(245,245,245);
-    
+.header {
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url(fotos3/local.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 50px 0 0 0;
 }
 
 .menu {
@@ -64,6 +52,13 @@ header{
     justify-content: space-between;
 }
 
+.logo {
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+}
+
 .menu .navbar ul li {
     position: relative;
     float: left;
@@ -72,7 +67,7 @@ header{
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
-    color:  #c9a538;
+    color:  white;
     display: block;
     font-weight: 600;
 }
@@ -81,142 +76,86 @@ header{
     color: #c9a538;
 }
 
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: #c9a538;
-    font-size: 1.6em;
-}
-
-header .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-header a:hover{
-    color: blueviolet;
-}
-
-#hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("fotos3/reservar.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#hero h1{
-    color: white;
-}
-
-#hero button{
-    font-size: 1.75em;
-}
-
-#somos-proya .container{
-    text-align: center;
-    padding: 200px 12px;
-}
-
-#nuestros-programas{
-    background-color: rgb(30,30,30);
-    color: white;
-    text-align: center;
-}
-
-#nuestros-programas .container{
-    padding: 150px 12px;
-}
-
-#nuestros-programas h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
-
-#nuestros-programas p{
+#menu {
     display: none;
 }
 
-#nuestros-programas .carta{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 15px;
+.menu-icono {
+    width: 25px;
 }
 
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("fotos3/especiales.webp");
+.menu label {
+    cursor: pointer;
+    display: none;
 }
 
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("fotos3/comidas.webp");
-
-}
-
-#caracteristicas .container{
+form {
+    
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
     text-align: center;
-    padding: 250px 12px;
+    width: 340px;
 }
 
-#caracteristicas li{
-    margin: 16px 0px;
-    font-weight: bold;
-}
-
-#final{
+.input-group {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
+}
+
+h2 {
+    color: #283629;
+    font-size: 35px;
+}
+
+label {
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #F0FAF1;
+    color: #283629;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #b5cab6;
+}
+
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
-    background-color: rgb(30,30,30);
+}
+
+.form-txt a {
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
     color: white;
-    height: 80vh;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51D94C;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
 }
 
-#final h2{
-    font-size: 9vw;
-}
-
-#final button{
-    font-size: 5vw;
+.btn:hover {
+    background-color: #50E04B;
 }
 
 .footer {
@@ -250,7 +189,11 @@ header a:hover{
     color: #c9a538;
 }
 
-@media (min-width: 991px){
+@media(max-width:991px) {
+
+    body {
+        padding: 30px;
+    }
 
     .menu {
         padding: 20px;
@@ -265,158 +208,29 @@ header a:hover{
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #181818;
+        background-color: #ffbd4c;
         display: none;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #2c2c2c;
     }
 
     .menu .navbar ul li {
         width: 100%;
     }
 
-    .menu ul li a {
-        color: white;
-    }
-    
     #menu:checked ~ .navbar {
         display: initial;
     }
 
-    .logo {
-        display: none;
-    }
-    
-    header{
-        position: fixed;
+    form {
+        padding: 50px;
         width: 100%;
     }
 
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
-    #hero h1{
-        font-size: 5em;
-    }
-
-    #somos-proya .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #somos-proya .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #somos-proya h2{
-        margin-top: 0px;
-    }
-
-    #somos-proya .img-container{
-        background-image: url("fotos3/atencion.webp");
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 400px; 
-    }
-
-    #nuestros-programas .programas{
-        display: flex;
-        justify-content: center;
-    }
-
-    #nuestros-programas p{
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    #nuestros-programas h2{
-        font-size: 4em;
-    }
-
-    #nuestros-programas h3{
-        margin-top: 0;
-    }
-
-    #nuestros-programas .carta{
-        padding: 50px;
-        background-size: 100% 150px;
-        background-repeat: no-repeat;
-        background-position-y: 0;
-        background-color: rgba(50, 50, 50, 1);
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    }
-
-    .carta:first-child{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("media/front-end-cropped.jpg");
-
-    }
-
-    .carta:nth-child(2){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("media/full-stack-cropped.jpg");
-    }
-
-    .carta:nth-child(3){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("media/python-cropped.jpg");
-
-    }
-
-    #caracteristicas{
-        background-repeat: no-repeat;
-        background-size: 500px 400px;
-        background-position: calc(100vw - 500px) 120px;
-    }
-
-    #caracteristicas .container{
-        text-align: initial;
-    }
-
-    #caracteristicas ul{
-        margin-left: 100px;
-    }
-
-    #final h2{
-        font-size: 5em;
-    }
-
-    #final button{
-        font-size: 2em;
-    }
-
-    .footer {
-        padding: 30px;
-    }
-
-    .food-content {
-        flex-direction: column;
-        text-align: center;
+    input {
+        padding: 15px;
     }
 
     .link ul {

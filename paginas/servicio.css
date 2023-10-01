@@ -13,8 +13,13 @@ font-family: 'Satisfy', cursive;
     list-style: none;
 }
 
+:root {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #F5F4F0;
 }
 
 img {
@@ -31,7 +36,7 @@ img {
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.4)
     ),
-    url(fotos1/campestre.webp);
+    url(fotos2/photo.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,146 +88,111 @@ img {
     width: 25px;
 }
 
-.menu label{
+.menu label {
     cursor: pointer;
     display: none;
 }
 
-.header-content {
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: 300;
+    color: #c9a538;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-servicio {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    flex: 1;
-    padding: 0 200px;
+    flex-wrap: wrap;
 }
 
-.header-img {
-    flex-basis: 50%;
-    text-align: center;
+.contenedor-servicio img {
+    width: 40%;
 }
 
-.header-txt {
-    flex-basis: 50%;
-    text-align: center;
+.checklist-servicio {
+    width: 45%;
 }
 
-.header-txt h1 {
-    font-size: 90px;
-    text-transform: uppercase;
-    line-height: 1;
-    color: white;
-    font-family: 'Satisfy', sans-serif;
-    margin-bottom: 15px;
-}
-
-.header-txt p {
-    font-size: 20px;
-    text-transform: uppercase;
+.service {
     margin-bottom: 20px;
-    color: white;
 }
 
-.btn-1 {
+.n-service {
+    margin-bottom: 7px;
+    color: #c9a538;
+}
+
+.number {
     display: inline-block;
-    padding: 11px 25px;
-    background-color: #c9a538;
-    color: white;
-    border-radius: 5px;
+    background-image: linear-gradient(to top, #c9a538 0%, #dcc990 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
 }
 
-.ofert {
-    padding: 20px 0 0 0;
-    display: flex;
-    justify-content: space-between;
+.gallery {
+    background: rgb(255, 247, 233);
 }
 
-.ofert-1 {
+.subtitulo {
+    font-family: 'Satisfy', sans-serif;
+}
+
+.contenedor-galeria {
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.experts {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    flex-basis: calc(33.% - 15px);
-    background-color: #f5f5f5;
-    padding: 35px;
+    flex-wrap: wrap;
 }
 
-.ofert-img {
-    flex-basis: 50%;
-    margin-right: 15px;
-}
-
-.ofert-img img {
-    width: 250px;
-}
-
-.ofert-txt {
-    flex-basis: 50%;
+.cont-expert {
+    width: 30%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.ofert-txt h3 {
-    color: #c9a538;
-    font-family: 'Satisfy', sans-serif;
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+.cont-expert img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
 }
 
-.btn-2 {
+.n-expert {
     display: inline-block;
-    padding: 7px 10px;
-    background-color: #111111;
-    color: white;
-    border-radius: 5px;
-    font-size: 15px;
-}
-
-.products {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.products h2 {
-    color: #c9a538;
-    font-family: 'Satisfy', sans-serif;
-    font-size: 50px;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-.product-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-}
-
-.product {
-    text-align: center;
-    padding: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
-    width: 250px;
-    height: 370px;
-    margin-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.product h3 {
-    font-size: 20px;
-    color: #c9a538;
-    font-family: 'Satisfy', sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-
-.product p, .precio {
-    font-size: 16px;
-    color: #111111;
-    margin-bottom: 15px;
-}
-
-.precio {
-    font-weight: 800;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
 }
 
 .footer {
@@ -256,6 +226,32 @@ img {
     color: #c9a538;
 }
 
+.social-media {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff ;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover {
+    background: #fff;
+    color: #c9a538;
+}
+
+.social-media-icon i {
+    font-size: 30px;
+    line-height: 60px;
+}
 @media (max-width:991px) {
 
     .menu {
@@ -287,61 +283,35 @@ img {
         display: initial;
     }
 
-    .logo {
-        display: none;
+    .contenedor-servicio img {
+        width: 80%;
+        margin-bottom: 48px;
+
     }
 
-    .submenu:hover #carrito {
-        min-width: 100%;
+    .checklist-servicio {
+        width: 80%;
     }
 
-    .header {
-        min-height: 0vh;
+    .service {
+        margin-bottom: 40px;
     }
 
-    .header-content {
-        padding: 50px 0;
-        flex-direction: column;
+    .img-galeria {
+        width: 45%;
+    }
+    
+    .cont-expert {
+        width: 80%;
     }
 
-    .header-img {
-        display: none;
+    .social-media {
+        width: 80%;
+        justify-content: space-evenly;
     }
 
-    .header-txt {
-        flex-basis: 100%;
-        text-align: center;
-    }
-
-    .header-txt h1 {
-        font-size: 70px;
-    }
-
-    .ofert {
-        padding: 30px 30px 0 30px;
-        flex-direction: column;
-    }
-
-    .ofert-1 {
-        margin-bottom: 30px;
-    }
-
-    .products {
-        padding: 0 30px 30px 30px;
-    }
-
-    .products h2 {
-        margin-bottom: 30px;
-    }
-
-    .product-content {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
-    }
-
-    .product img {
-        width: 200px;
-        height: 280px;
+    .social-media i {
+        margin-left: 0;
     }
 
     .footer {
@@ -360,5 +330,4 @@ img {
     .link ul li {
         margin: 0 0 15px 0;
     }
-
 }
